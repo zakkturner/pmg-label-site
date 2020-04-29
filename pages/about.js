@@ -1,5 +1,5 @@
 import Header from "../components/header.js";
-import Footer from "../components/Footer.js";
+import Footer from "../components/footer.js";
 
 export default function About() {
   return (
@@ -7,7 +7,9 @@ export default function About() {
       <Header />
       <div className="content-wrapper w-container"></div>
       <div className="section">
-        <h1 className="page-title about-header">About Us</h1>
+        <h1 className="page-title about-header">
+          About <span className="head-span text-span-2">Us</span>
+        </h1>
         <blockquote className="block-quote">
           The beauty isn&#x27;t in any particular type of art,
           <br /> but the use of art to inspire people, <br />

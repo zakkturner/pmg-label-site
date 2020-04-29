@@ -8,7 +8,7 @@ export default function Index() {
         <h1 className="hero-heading">
           PlayOffS
           <br />
-          Music <span className="text-span">Group</span>
+          Music <span className="head-span text-span-2">Group</span>
         </h1>
         <a href="music.html" className="button big w-button">
           View our Artist

@@ -1,5 +1,5 @@
 import Header from "../components/header.js";
-import Footer from "../components/Footer.js";
+import Footer from "../components/footer.js";
 
 export default function Music() {
   return (
@@ -8,7 +8,7 @@ export default function Music() {
 
       <div className="content-wrapper w-container">
         <h1 className="page-title">
-          Latest <span className="head-span head-span">AlbumS</span>
+          Latest <span className="head-span text-span-2">Albums</span>
         </h1>
       </div>
       <div className="section">
@@ -55,6 +55,7 @@ export default function Music() {
                   <div className="w-col w-col-8">
                     <div className="small-grey-text">Orange Beanie</div>
                     <h2 className="featured-title">Young Dad EP</h2>
+                    <p>2018</p>
                   </div>
                 </div>
               </div>

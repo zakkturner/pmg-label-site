@@ -2280,7 +2280,7 @@ p {
   padding: 11px 26px;
   border-style: none;
   border-color: #fff;
-  background-color: #400202;
+  background-color: #ec1c23;
   -webkit-transition: border 200ms ease, color 200ms ease;
   transition: border 200ms ease, color 200ms ease;
   font-family: "Roboto Slab", sans-serif;
@@ -2492,10 +2492,11 @@ p {
   background-size: cover;
 }
 
-.slide-2 {
-  background-image: url("../images/jo.jpg");
-  background-position: 50% 0%;
+.slide-3 {
+  background-image: url("/images/jerry-o.jpg");
+  background-position: center top;
   background-size: cover;
+  box-shadow: inset 0 0 100px black;
 }
 
 .slider {
@@ -2693,7 +2694,7 @@ p {
 }
 
 .head-span {
-  color: #400202;
+  color: #ec1c23;
 }
 
 .text-span-2 {

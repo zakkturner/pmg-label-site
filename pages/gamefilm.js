@@ -1,5 +1,5 @@
 import Header from "../components/header.js";
-import Footer from "../components/Footer.js";
+import Footer from "../components/footer.js";
 
 const gameFilmData = [
   {
@@ -54,7 +54,9 @@ const GameFilm = () => {
     <section className="gamefilm-page">
       <Header />
       <div className="content-wrapper w-container">
-        <h1 className="page-title">Game Film</h1>
+        <h1 className="page-title">
+          Game <span className="head-span text-span-2">Film</span>
+        </h1>
         <div className="w-dyn-list list-container">
           {gameFilmData.map(vid => (
             <div className="w-dyn-items grid-cell w-row">
@@ -62,8 +64,8 @@ const GameFilm = () => {
                 <h3 className="heading-3">{vid.name}</h3>
 
                 <iframe
-                  width="260"
-                  height="115"
+                  width="300"
+                  height="215"
                   src={`${vid.url}`}
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

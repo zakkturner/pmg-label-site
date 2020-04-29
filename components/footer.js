@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 export default function Footer() {
   return (
     <div class="footer">
@@ -15,9 +17,24 @@ export default function Footer() {
           <img src="images/social-17-white.svg" width="23" alt="" />
         </a>
         <div class="footer-text">
-          Album art is used for demonstration purposes only. 
+          &copy;Copyright 2020{" "}
+          <a href="https://linktr.ee/playoffsmusicgroup">
+            Playoffs Music Group
+          </a>
         </div>
       </div>
+      <Head>
+        <script src="./js/webflow.js" type="text/javascript"></script>
+      </Head>
+      <style jsx>{`
+        a {
+          color: white;
+          transition: 0.4s ease-in-out;
+        }
+        a:hover {
+          color: #ec1c23;
+        }
+      `}</style>
     </div>
   );
 }
