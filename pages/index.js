@@ -1,4 +1,5 @@
 import Header from "../components/header.js";
+import Link from "next/link";
 
 export default function Index() {
   return (
@@ -10,12 +11,12 @@ export default function Index() {
           <br />
           Music <span className="head-span text-span-2">Group</span>
         </h1>
-        <a href="music.html" className="button big w-button">
-          View our Artist
-        </a>
-        <a href="tour.html" className="button big w-button">
-          Check Out Our Music
-        </a>
+        <Link href="/roster">
+          <a className="button big w-button">View our Artist</a>
+        </Link>
+        <Link href="/music">
+          <a className="button big w-button">Check Out Our Music</a>
+        </Link>
       </div>
     </section>
   );
