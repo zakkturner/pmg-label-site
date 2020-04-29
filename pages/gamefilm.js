@@ -25,7 +25,7 @@ const gameFilmData = [
   {
     id: 5,
     name: "Orange Beanie - They 2",
-    url: "https://www.youtube.com/embed/kxFlk4bTCVo"
+    url: "https://www.youtube.com/embed/JSWGjf37hEs"
   },
   {
     id: 6,
