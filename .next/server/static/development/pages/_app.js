@@ -118,11 +118,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _css_webflow_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/webflow.css */ "./css/webflow.css");
 /* harmony import */ var _css_webflow_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_webflow_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/styles/main.scss */ "./public/styles/main.scss");
+/* harmony import */ var _public_styles_main_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_public_styles_main_scss__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "C:\\Users\\Zak\\Documents\\Code\\pmg-site\\pages\\_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 
  // import { config } from "@fortawesome/fontawesome-svg-core";
 // import "@fortawesome/fontawesome-svg-core/styles.css"; // Import the CSS
@@ -141,6 +144,17 @@ function MyApp({
     }
   }));
 }
+
+/***/ }),
+
+/***/ "./public/styles/main.scss":
+/*!*********************************!*\
+  !*** ./public/styles/main.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 

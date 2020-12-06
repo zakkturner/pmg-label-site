@@ -12,7 +12,7 @@ export default function Index() {
           Music <span className="head-span text-span-2">Group</span>
         </h1>
         <Link href="/roster">
-          <a className="button big w-button">View our Artist</a>
+          <a className="button big w-button">View our Roster</a>
         </Link>
         <Link href="/music">
           <a className="button big w-button">Check Out Our Music</a>
