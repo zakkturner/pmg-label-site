@@ -120,11 +120,18 @@ export default function Header() {
           onClick={handleMenu}
         >
           <div className="menu-text">MENU</div>
-          <div className="menu-icon w-icon-nav-menu"></div>
+          {/* <div className="menu-icon w-icon-nav-menu"></div> */}
         </div>
         <style jsx>{`
           .menu-button {
             z-index: 100;
+          }
+          .w-nav-menu {
+            display: none;
+          }
+          .menu-text,
+          menu-icon {
+            display: none;
           }
         `}</style>
       </div>
