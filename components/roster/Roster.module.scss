@@ -1,0 +1,40 @@
+.roster {
+  padding: 0 !important;
+  //   height: 100vh;
+  div {
+    display: flex !important;
+    flex-wrap: nowrap;
+    width: 620%;
+    height: 100%;
+    .panel {
+      //   width: 100% !important;
+      height: 100%;
+    }
+    .one {
+      background: url("../../public/images/basketball.jpg") no-repeat center
+        center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+      .rosterTitle {
+        color: #fff;
+        font-size: 50px;
+        position: absolute;
+        left: 10%;
+        top: 50%;
+      }
+    }
+    .player {
+      display: flex;
+      flex-direction: column;
+    }
+    .three {
+      background: purple;
+    }
+    .four {
+      background: green;
+    }
+  }
+}
