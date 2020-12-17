@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -721,6 +721,139 @@ function Menu({
 
 /***/ }),
 
+/***/ "./components/roster/Bios/Bios.js":
+/*!****************************************!*\
+  !*** ./components/roster/Bios/Bios.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Bios; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Bios.module.scss */ "./components/roster/Bios/Bios.module.scss");
+/* harmony import */ var _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Bios_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Zak\\Documents\\Code\\pmg-site\\components\\roster\\Bios\\Bios.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Bios({
+  biosData
+}) {
+  //   console.log(biosData.name);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.biosLeft,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 7
+    }
+  }, __jsx("h3", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 9
+    }
+  }, "Player Info"), __jsx("ul", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.infoList,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }, __jsx("li", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 11
+    }
+  }, __jsx("span", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.infoTitle,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 13
+    }
+  }, "Hometown"), __jsx("h5", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.info,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 13
+    }
+  }, biosData.home)), __jsx("li", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 11
+    }
+  }, __jsx("span", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.infoTitle,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }, "Experience"), __jsx("h5", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.info,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 13
+    }
+  }, biosData.exp)))), __jsx("div", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.biosRight,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 7
+    }
+  }, __jsx("p", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.bio,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 9
+    }
+  }, biosData.bio)));
+}
+
+/***/ }),
+
+/***/ "./components/roster/Bios/Bios.module.scss":
+/*!*************************************************!*\
+  !*** ./components/roster/Bios/Bios.module.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"biosLeft": "Bios_biosLeft__gC-se",
+	"title": "Bios_title__25_wy",
+	"infoList": "Bios_infoList__3Or_Q",
+	"item": "Bios_item__fdj86",
+	"biosRight": "Bios_biosRight__1fqQ_"
+};
+
+/***/ }),
+
 /***/ "./components/roster/Roster.js":
 /*!*************************************!*\
   !*** ./components/roster/Roster.js ***!
@@ -739,10 +872,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gsap_dist_gsap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gsap_dist_gsap__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gsap/dist/ScrollTrigger */ "gsap/dist/ScrollTrigger");
 /* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _RosterCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RosterCard */ "./components/roster/RosterCard.js");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _RosterProfile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./RosterProfile */ "./components/roster/RosterProfile.js");
+/* harmony import */ var _RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RosterCard/RosterCard */ "./components/roster/RosterCard/RosterCard.js");
+/* harmony import */ var _data_albumData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data/albumData */ "./components/roster/data/albumData.js");
+/* harmony import */ var _data_biosData__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./data/biosData */ "./components/roster/data/biosData.js");
+/* harmony import */ var _RosterProfile_RosterProfile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./RosterProfile/RosterProfile */ "./components/roster/RosterProfile/RosterProfile.js");
 var _jsxFileName = "C:\\Users\\Zak\\Documents\\Code\\pmg-site\\components\\roster\\Roster.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -751,8 +884,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-gsap_dist_gsap__WEBPACK_IMPORTED_MODULE_2__["gsap"].registerPlugin(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_3__["ScrollTrigger"]);
 
+
+gsap_dist_gsap__WEBPACK_IMPORTED_MODULE_2__["gsap"].registerPlugin(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_3__["ScrollTrigger"]);
 
 function Roster() {
   let one = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
@@ -785,7 +919,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 37,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -796,7 +930,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 44,
       columnNumber: 7
     }
   }, __jsx("h2", {
@@ -804,7 +938,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 50,
       columnNumber: 9
     }
   }, "Our Roster")), __jsx("div", {
@@ -815,10 +949,10 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 52,
       columnNumber: 7
     }
-  }, __jsx(_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
     background: "images/obHeadshot.png",
     name: "Orange Beanie",
     position: "Rapper",
@@ -827,14 +961,16 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 58,
       columnNumber: 9
     }
-  }), __jsx(_RosterProfile__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), __jsx(_RosterProfile_RosterProfile__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    albumData: _data_albumData__WEBPACK_IMPORTED_MODULE_5__["albumData"][0].albums,
+    biosData: _data_biosData__WEBPACK_IMPORTED_MODULE_6__["biosData"][0],
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 65,
       columnNumber: 9
     }
   })), __jsx("div", {
@@ -845,10 +981,10 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 67,
       columnNumber: 7
     }
-  }, __jsx(_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
     background: "images/johs.png",
     name: "Jerry Owens",
     position: "Rapper",
@@ -857,14 +993,16 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 73,
       columnNumber: 9
     }
-  }), __jsx(_RosterProfile__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), __jsx(_RosterProfile_RosterProfile__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    albumData: _data_albumData__WEBPACK_IMPORTED_MODULE_5__["albumData"][1].albums,
+    biosData: _data_biosData__WEBPACK_IMPORTED_MODULE_6__["biosData"][1],
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 80,
       columnNumber: 9
     }
   })), __jsx("div", {
@@ -875,10 +1013,10 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 82,
       columnNumber: 7
     }
-  }, __jsx(_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
     background: "images/obHeadshot.png",
     name: "Lord Ward",
     position: "Producer",
@@ -887,14 +1025,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
-      columnNumber: 9
-    }
-  }), __jsx(_RosterProfile__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 88,
       columnNumber: 9
     }
   })));
@@ -922,10 +1053,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./components/roster/RosterCard.js":
-/*!*****************************************!*\
-  !*** ./components/roster/RosterCard.js ***!
-  \*****************************************/
+/***/ "./components/roster/RosterCard/RosterCard.js":
+/*!****************************************************!*\
+  !*** ./components/roster/RosterCard/RosterCard.js ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -934,9 +1065,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RosterCard; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RosterCard.module.scss */ "./components/roster/RosterCard.module.scss");
+/* harmony import */ var _RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RosterCard.module.scss */ "./components/roster/RosterCard/RosterCard.module.scss");
 /* harmony import */ var _RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Zak\\Documents\\Code\\pmg-site\\components\\roster\\RosterCard.js";
+var _jsxFileName = "C:\\Users\\Zak\\Documents\\Code\\pmg-site\\components\\roster\\RosterCard\\RosterCard.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1025,30 +1156,30 @@ function RosterCard({
 
 /***/ }),
 
-/***/ "./components/roster/RosterCard.module.scss":
-/*!**************************************************!*\
-  !*** ./components/roster/RosterCard.module.scss ***!
-  \**************************************************/
+/***/ "./components/roster/RosterCard/RosterCard.module.scss":
+/*!*************************************************************!*\
+  !*** ./components/roster/RosterCard/RosterCard.module.scss ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 // Exports
 module.exports = {
-	"rosterCard": "RosterCard_rosterCard__fY0vA",
-	"rosterDescription": "RosterCard_rosterDescription__3zn4Q",
-	"descInfo": "RosterCard_descInfo__3wg6L",
-	"title": "RosterCard_title__2nPgD",
-	"active": "RosterCard_active__W8ziP",
-	"name": "RosterCard_name__1zQ4N",
-	"rosterPic": "RosterCard_rosterPic__2TVPk"
+	"rosterCard": "RosterCard_rosterCard__21Is7",
+	"rosterDescription": "RosterCard_rosterDescription__2THDK",
+	"descInfo": "RosterCard_descInfo__18yZB",
+	"title": "RosterCard_title__QPdQs",
+	"active": "RosterCard_active__g3Lha",
+	"name": "RosterCard_name__PqG48",
+	"rosterPic": "RosterCard_rosterPic__h4tF8"
 };
 
 /***/ }),
 
-/***/ "./components/roster/RosterProfile.js":
-/*!********************************************!*\
-  !*** ./components/roster/RosterProfile.js ***!
-  \********************************************/
+/***/ "./components/roster/RosterProfile/RosterProfile.js":
+/*!**********************************************************!*\
+  !*** ./components/roster/RosterProfile/RosterProfile.js ***!
+  \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1057,22 +1188,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RosterProfile; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RosterProfile.module.scss */ "./components/roster/RosterProfile.module.scss");
+/* harmony import */ var _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RosterProfile.module.scss */ "./components/roster/RosterProfile/RosterProfile.module.scss");
 /* harmony import */ var _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _data_albumData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data/albumData */ "./components/roster/data/albumData.js");
-var _jsxFileName = "C:\\Users\\Zak\\Documents\\Code\\pmg-site\\components\\roster\\RosterProfile.js";
+/* harmony import */ var _Stats_Stats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Stats/Stats */ "./components/roster/Stats/Stats.js");
+/* harmony import */ var _Bios_Bios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Bios/Bios */ "./components/roster/Bios/Bios.js");
+var _jsxFileName = "C:\\Users\\Zak\\Documents\\Code\\pmg-site\\components\\roster\\RosterProfile\\RosterProfile.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-function RosterProfile() {
-  console.log(_data_albumData__WEBPACK_IMPORTED_MODULE_2__["albumData"]);
+
+
+function RosterProfile({
+  albumData,
+  biosData
+}) {
+  const {
+    0: index,
+    1: setIndex
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  const tabs = [{
+    name: "Stats"
+  }, {
+    name: "Bio"
+  }];
+
+  const handleClick = i => {
+    setIndex(i);
+  };
+
   return __jsx("div", {
     className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.rProfile,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 15,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -1080,7 +1230,7 @@ function RosterProfile() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 16,
       columnNumber: 7
     }
   }, __jsx("ul", {
@@ -1088,138 +1238,236 @@ function RosterProfile() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 17,
       columnNumber: 9
     }
-  }, __jsx("li", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
+  }, tabs.map((tab, i) => {
+    return __jsx("li", {
+      className: index === i ? `${_RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item} ${_RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.active}` : `${_RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item}  `,
+      onClick: () => handleClick(i),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 15
+      }
+    }, tab.name);
+  }))), __jsx("div", {
+    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.profileContainer,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 11
+      lineNumber: 35,
+      columnNumber: 7
     }
-  }, "Profile"), __jsx("li", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 11
-    }
-  }, "Stats"), __jsx("li", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 11
-    }
-  }, "Bio"), __jsx("li", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 11
-    }
-  }, "Videos"))), __jsx("div", {
+  }, index === 0 && __jsx("div", {
     className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.statsContainer,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 7
-    }
-  }, __jsx("table", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.statsTable,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 9
-    }
-  }, __jsx("thead", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 37,
       columnNumber: 11
     }
-  }, __jsx("tr", {
+  }, __jsx(_Stats_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    albumData: albumData,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 38,
       columnNumber: 13
     }
-  }, __jsx("th", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.first,
+  })), index === 1 && __jsx("div", {
+    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.biosContainer,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 15
-    }
-  }, "Year"), __jsx("th", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 15
-    }
-  }, "Album"), __jsx("th", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 15
-    }
-  }, "Songs"), __jsx("th", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 15
-    }
-  }, "Videos"), __jsx("th", {
-    className: _RosterProfile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 15
-    }
-  }, "Singles"))), __jsx("tbody", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 42,
       columnNumber: 11
+    }
+  }, __jsx(_Bios_Bios__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    biosData: biosData,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 13
     }
   }))));
 }
 
 /***/ }),
 
-/***/ "./components/roster/RosterProfile.module.scss":
-/*!*****************************************************!*\
-  !*** ./components/roster/RosterProfile.module.scss ***!
-  \*****************************************************/
+/***/ "./components/roster/RosterProfile/RosterProfile.module.scss":
+/*!*******************************************************************!*\
+  !*** ./components/roster/RosterProfile/RosterProfile.module.scss ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 // Exports
 module.exports = {
-	"rProfile": "RosterProfile_rProfile__3yxGr",
-	"navContainer": "RosterProfile_navContainer__1SxU8",
-	"subNav": "RosterProfile_subNav__tY08O",
-	"item": "RosterProfile_item__2BoNm",
-	"statsContainer": "RosterProfile_statsContainer__3g6Q5",
-	"statsTable": "RosterProfile_statsTable__9HNKm"
+	"rProfile": "RosterProfile_rProfile__31ogx",
+	"navContainer": "RosterProfile_navContainer__BhCCU",
+	"subNav": "RosterProfile_subNav__3QJaj",
+	"item": "RosterProfile_item__n_Bu5",
+	"active": "RosterProfile_active__1Oqz6",
+	"profileContainer": "RosterProfile_profileContainer__2CsKM",
+	"statsContainer": "RosterProfile_statsContainer__1q6mK",
+	"biosContainer": "RosterProfile_biosContainer__2R2-M"
+};
+
+/***/ }),
+
+/***/ "./components/roster/Stats/Stats.js":
+/*!******************************************!*\
+  !*** ./components/roster/Stats/Stats.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Stats; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Stats_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Stats.module.scss */ "./components/roster/Stats/Stats.module.scss");
+/* harmony import */ var _Stats_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Stats_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Zak\\Documents\\Code\\pmg-site\\components\\roster\\Stats\\Stats.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Stats({
+  albumData
+}) {
+  return __jsx("table", {
+    className: _Stats_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.statsTable,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4,
+      columnNumber: 5
+    }
+  }, __jsx("thead", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 7
+    }
+  }, __jsx("tr", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 9
+    }
+  }, __jsx("th", {
+    className: _Stats_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.first,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 11
+    }
+  }, "Year"), __jsx("th", {
+    className: _Stats_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 11
+    }
+  }, "Album"), __jsx("th", {
+    className: _Stats_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 11
+    }
+  }, "Songs"), __jsx("th", {
+    className: _Stats_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 11
+    }
+  }, "Videos"), __jsx("th", {
+    className: _Stats_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 11
+    }
+  }, "Singles"))), __jsx("tbody", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 7
+    }
+  }, albumData && albumData.map(album => {
+    return __jsx("tr", {
+      className: _Stats_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.albumData,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 15
+      }
+    }, __jsx("td", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 17
+      }
+    }, album.year), __jsx("td", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 17
+      }
+    }, album.name), __jsx("td", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 17
+      }
+    }, album.songs), __jsx("td", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 17
+      }
+    }, album.videos), __jsx("td", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 17
+      }
+    }, album.singles));
+  })));
+}
+
+/***/ }),
+
+/***/ "./components/roster/Stats/Stats.module.scss":
+/*!***************************************************!*\
+  !*** ./components/roster/Stats/Stats.module.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"statsTable": "Stats_statsTable__3hfph"
 };
 
 /***/ }),
@@ -1270,6 +1518,30 @@ const albumData = [{
     videos: 2,
     singles: 2
   }]
+}];
+
+/***/ }),
+
+/***/ "./components/roster/data/biosData.js":
+/*!********************************************!*\
+  !*** ./components/roster/data/biosData.js ***!
+  \********************************************/
+/*! exports provided: biosData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "biosData", function() { return biosData; });
+const biosData = [{
+  name: "Orange Beanie",
+  home: "IN",
+  exp: "5",
+  bio: "Orange Beanie is an emerging artist from Indianapolis, IN. Due to his charismatic stage presence and personality he’s been dubbed an Odd-Ball and predominantly makes energetic music for other Odd-Balls to enjoy. However that doesn’t mean he’s a one trick pony, he can’t be boxed in artistically and he’s eager to prove it."
+}, {
+  name: "Jerry Owens",
+  home: "IN",
+  exp: "3",
+  bio: "What is the Jerry Owens Experience? It's a meditation. You may start with an inner turbulence that boils through your body, but the heat will transcend. It will transpire. It will transgress. By the time it is supposed to reach your toes, by the time you reach the last track of the tape, it will have evaporated from you and just be part of the air you breathe. It's effortless in capturing the atmosphere, the turmoil, the sensations."
 }];
 
 /***/ }),
@@ -3556,7 +3828,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*****************************!*\
   !*** multi ./pages/main.js ***!
   \*****************************/

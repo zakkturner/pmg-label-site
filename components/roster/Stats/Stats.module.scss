@@ -1,0 +1,36 @@
+.statsTable {
+  width: 100%;
+  height: auto;
+  thead {
+    width: 100%;
+    display: inline-block;
+    background: #a9a9a9;
+    tr {
+      font-family: "Roboto";
+      width: 92%;
+      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      //   justify-content: space-between;
+      margin: 0 auto;
+      background: #a9a9a9;
+      padding: 15px 0;
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 12px;
+    }
+  }
+  tbody {
+    tr {
+      font-family: "Roboto";
+      width: 92%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      margin: 0 auto;
+      padding: 15px 0;
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 12px;
+    }
+  }
+}
