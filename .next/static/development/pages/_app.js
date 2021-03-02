@@ -532,17 +532,31 @@ exports.push([module.i, "@font-face {\r\n  font-family: \"webflow-icons\";\r\n  
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./public/styles/main.scss":
-/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./public/styles/main.scss ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./public/styles/main.module.scss":
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./public/styles/main.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "#fp-nav ul li a span,\n.fp-slidesNav ul li a span {\n  background: #ffc331 !important; }\n\n#fp-nav.fp-show-active a.active + .fp-tooltip,\n#fp-nav ul li:hover .fp-tooltip {\n  color: #ffc331 !important;\n  font-weight: 600; }\n\n.fp-controlArrow.fp-next {\n  border-color: transparent transparent transparent #ffc331 !important;\n  border-width: 21.5px 0 21.5px 34px !important;\n  display: none; }\n\n.fp-controlArrow.fp-prev {\n  border-color: transparent #ffc331 transparent transparent !important;\n  border-width: 21.5px 34px 21.5px 0 !important;\n  display: none; }\n\n.fp-slidesNav.fp-bottom {\n  bottom: 170px !important; }\n\n#fp-nav ul,\n.fp-slidesNav ul {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%); }\n\n.hero {\n  background-attachment: fixed; }\n\n.section {\n  border-radius: 0; }\n\n.music-player {\n  position: fixed;\n  z-index: 999;\n  bottom: 0; }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-label-site/public/styles/main.scss"],"names":[],"mappings":"AAAA;;EAEE,8BAA8B,EAAA;;AAEhC;;EAEE,yBAAyB;EACzB,gBAAgB,EAAA;;AAIlB;EACE,oEAAoE;EACpE,6CAA6C;EAC7C,aAAa,EAAA;;AAGf;EACE,oEAAoE;EACpE,6CAA6C;EAC7C,aAAa,EAAA;;AAIf;EACE,wBAAwB,EAAA;;AAI1B;;EAEE,kBAAkB;EAClB,SAAS;EAET,0BAA0B,EAAA;;AAG5B;EACE,4BAA4B,EAAA;;AAG9B;EACE,gBAAgB,EAAA;;AAGlB;EACE,eAAe;EACf,YAAY;EACZ,SAAS,EAAA","file":"main.scss","sourcesContent":["#fp-nav ul li a span,\r\n.fp-slidesNav ul li a span {\r\n  background: #ffc331 !important;\r\n}\r\n#fp-nav.fp-show-active a.active + .fp-tooltip,\r\n#fp-nav ul li:hover .fp-tooltip {\r\n  color: #ffc331 !important;\r\n  font-weight: 600;\r\n}\r\n\r\n// slider arrows\r\n.fp-controlArrow.fp-next {\r\n  border-color: transparent transparent transparent #ffc331 !important;\r\n  border-width: 21.5px 0 21.5px 34px !important;\r\n  display: none;\r\n}\r\n\r\n.fp-controlArrow.fp-prev {\r\n  border-color: transparent #ffc331 transparent transparent !important;\r\n  border-width: 21.5px 34px 21.5px 0 !important;\r\n  display: none;\r\n}\r\n\r\n// bottom dots container\r\n.fp-slidesNav.fp-bottom {\r\n  bottom: 170px !important;\r\n}\r\n// bottom dots\r\n\r\n#fp-nav ul,\r\n.fp-slidesNav ul {\r\n  position: absolute;\r\n  left: 50%;\r\n\r\n  transform: translate(-50%);\r\n}\r\n\r\n.hero {\r\n  background-attachment: fixed;\r\n}\r\n\r\n.section {\r\n  border-radius: 0;\r\n}\r\n\r\n.music-player {\r\n  position: fixed;\r\n  z-index: 999;\r\n  bottom: 0;\r\n}\r\n"]}]);
-
+exports.push([module.i, "#main_fp-nav__2XWvq ul li a span,\n.main_fp-slidesNav__3G_BP ul li a span {\n  background: #ffc331 !important; }\n\n#main_fp-nav__2XWvq.main_fp-show-active__23S58 a.main_active__2Ta__ + .main_fp-tooltip__2lgzL,\n#main_fp-nav__2XWvq ul li:hover .main_fp-tooltip__2lgzL {\n  color: #ffc331 !important;\n  font-weight: 600; }\n\n.main_fp-controlArrow__3-9tw.main_fp-next__2Im5V {\n  border-color: transparent transparent transparent #ffc331 !important;\n  border-width: 21.5px 0 21.5px 34px !important;\n  display: none; }\n\n.main_fp-controlArrow__3-9tw.main_fp-prev__cGtSN {\n  border-color: transparent #ffc331 transparent transparent !important;\n  border-width: 21.5px 34px 21.5px 0 !important;\n  display: none; }\n\n.main_fp-slidesNav__3G_BP.main_fp-bottom__3gO8s {\n  bottom: 170px !important; }\n\n#main_fp-nav__2XWvq ul,\n.main_fp-slidesNav__3G_BP ul {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%); }\n\n.main_hero__3FDjP {\n  background-attachment: fixed; }\n\n.main_section__12zke {\n  border-radius: 0; }\n\n.main_music-player__36gz2 {\n  position: fixed;\n  z-index: 999;\n  bottom: 0; }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-label-site/public/styles/main.module.scss"],"names":[],"mappings":"AAAA;;EAEE,8BAA8B,EAAA;;AAEhC;;EAEE,yBAAyB;EACzB,gBAAgB,EAAA;;AAIlB;EACE,oEAAoE;EACpE,6CAA6C;EAC7C,aAAa,EAAA;;AAGf;EACE,oEAAoE;EACpE,6CAA6C;EAC7C,aAAa,EAAA;;AAIf;EACE,wBAAwB,EAAA;;AAI1B;;EAEE,kBAAkB;EAClB,SAAS;EAET,0BAA0B,EAAA;;AAG5B;EACE,4BAA4B,EAAA;;AAG9B;EACE,gBAAgB,EAAA;;AAGlB;EACE,eAAe;EACf,YAAY;EACZ,SAAS,EAAA","file":"main.module.scss","sourcesContent":["#fp-nav ul li a span,\r\n.fp-slidesNav ul li a span {\r\n  background: #ffc331 !important;\r\n}\r\n#fp-nav.fp-show-active a.active + .fp-tooltip,\r\n#fp-nav ul li:hover .fp-tooltip {\r\n  color: #ffc331 !important;\r\n  font-weight: 600;\r\n}\r\n\r\n// slider arrows\r\n.fp-controlArrow.fp-next {\r\n  border-color: transparent transparent transparent #ffc331 !important;\r\n  border-width: 21.5px 0 21.5px 34px !important;\r\n  display: none;\r\n}\r\n\r\n.fp-controlArrow.fp-prev {\r\n  border-color: transparent #ffc331 transparent transparent !important;\r\n  border-width: 21.5px 34px 21.5px 0 !important;\r\n  display: none;\r\n}\r\n\r\n// bottom dots container\r\n.fp-slidesNav.fp-bottom {\r\n  bottom: 170px !important;\r\n}\r\n// bottom dots\r\n\r\n#fp-nav ul,\r\n.fp-slidesNav ul {\r\n  position: absolute;\r\n  left: 50%;\r\n\r\n  transform: translate(-50%);\r\n}\r\n\r\n.hero {\r\n  background-attachment: fixed;\r\n}\r\n\r\n.section {\r\n  border-radius: 0;\r\n}\r\n\r\n.music-player {\r\n  position: fixed;\r\n  z-index: 999;\r\n  bottom: 0;\r\n}\r\n"]}]);
+// Exports
+exports.locals = {
+	"fp-nav": "main_fp-nav__2XWvq",
+	"fp-slidesNav": "main_fp-slidesNav__3G_BP",
+	"fp-show-active": "main_fp-show-active__23S58",
+	"active": "main_active__2Ta__",
+	"fp-tooltip": "main_fp-tooltip__2lgzL",
+	"fp-controlArrow": "main_fp-controlArrow__3-9tw",
+	"fp-next": "main_fp-next__2Im5V",
+	"fp-prev": "main_fp-prev__cGtSN",
+	"fp-bottom": "main_fp-bottom__3gO8s",
+	"hero": "main_hero__3FDjP",
+	"section": "main_section__12zke",
+	"music-player": "main_music-player__36gz2"
+};
 
 /***/ }),
 
@@ -3645,8 +3659,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _css_webflow_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/webflow.css */ "./css/webflow.css");
 /* harmony import */ var _css_webflow_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_webflow_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _public_styles_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/styles/main.scss */ "./public/styles/main.scss");
-/* harmony import */ var _public_styles_main_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_public_styles_main_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _public_styles_main_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/styles/main.module.scss */ "./public/styles/main.module.scss");
+/* harmony import */ var _public_styles_main_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_public_styles_main_module_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 var _jsxFileName = "C:\\Users\\Zak\\Documents\\Code\\pmg-label-site\\pages\\_app.js";
 
@@ -3671,14 +3685,14 @@ function MyApp(_ref) {
 
 /***/ }),
 
-/***/ "./public/styles/main.scss":
-/*!*********************************!*\
-  !*** ./public/styles/main.scss ***!
-  \*********************************/
+/***/ "./public/styles/main.module.scss":
+/*!****************************************!*\
+  !*** ./public/styles/main.module.scss ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./main.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./public/styles/main.scss");
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./main.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./public/styles/main.module.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -3712,9 +3726,9 @@ if (content.locals) {
 if (true) {
   if (!content.locals) {
     module.hot.accept(
-      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./main.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./public/styles/main.scss",
+      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./main.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./public/styles/main.module.scss",
       function () {
-        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./main.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./public/styles/main.scss");
+        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./main.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./public/styles/main.module.scss");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];
