@@ -11,28 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 import RosterProfile from "./RosterProfile/RosterProfile";
 
 export default function Roster() {
-  // let one = useRef(null);
-  // let two = useRef(null);
-  // let three = useRef(null);
-  // let four = useRef(null);
-  // let roster = useRef(null);
-  // useEffect(() => {
-  //   let sections = [one, two, three, four];
-
-  //   gsap.to(sections, {
-  //     xPercent: -100 * (sections.length - 1),
-  //     ease: "none",
-  //     scrollTrigger: {
-  //       trigger: roster,
-  //       markers: true,
-  //       pin: true,
-  //       scrub: 1,
-  //       snap: 1 / (sections.length - 1),
-  //       start: "top top",
-  //       end: () => "+=" + document.querySelector("#roster").offsetWidth,
-  //     },
-  //   });
-  // });
   return (
     <section
       id="roster"
@@ -51,12 +29,7 @@ export default function Roster() {
           Our <span className={styles.titleColor}>Roster</span>
         </h2>
       </div>
-      <div
-        className={`${styles.panel} ${styles.player} slide`}
-        // ref={(el) => {
-        //   two = el;
-        // }}
-      >
+      <div className={`${styles.panel} ${styles.player} slide`}>
         <RosterCard
           background="images/obHeadshot.png"
           name="Orange Beanie"
