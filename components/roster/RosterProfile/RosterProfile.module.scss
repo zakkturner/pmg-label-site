@@ -2,6 +2,7 @@
 
 .rProfile {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #eee;
@@ -34,15 +35,15 @@
     .statsContainer {
       background-color: #fff;
       color: #000;
-      margin: 30px;
-      width: 10%;
+      margin: 0 auto;
+      width: 80%;
       height: auto;
     }
     .biosContainer {
       background-color: #fff;
       color: #000;
-      margin: 30px;
-      width: 10%;
+      margin: 0 auto;
+      width: 80%;
       height: 50%;
     }
   }

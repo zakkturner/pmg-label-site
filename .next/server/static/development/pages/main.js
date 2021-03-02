@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -744,94 +744,110 @@ function Bios({
 }) {
   //   console.log(biosData.name);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.biosLeft,
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.bios,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 24,
       columnNumber: 7
     }
-  }, __jsx("h3", {
+  }, __jsx("div", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.heading,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 9
+    }
+  }, __jsx("h4", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 9
+      lineNumber: 26,
+      columnNumber: 11
     }
-  }, "Player Info"), __jsx("ul", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.infoList,
+  }, "Player Info")), __jsx("div", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.desc,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 28,
       columnNumber: 9
+    }
+  }, __jsx("ul", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.descTop,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 11
     }
   }, __jsx("li", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 11
+      lineNumber: 30,
+      columnNumber: 13
     }
-  }, __jsx("span", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.infoTitle,
+  }, __jsx("h6", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 13
+      lineNumber: 31,
+      columnNumber: 15
     }
   }, "Hometown"), __jsx("h5", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.info,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 13
+      lineNumber: 32,
+      columnNumber: 15
     }
   }, biosData.home)), __jsx("li", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 11
+      lineNumber: 34,
+      columnNumber: 13
     }
-  }, __jsx("span", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.infoTitle,
+  }, __jsx("h6", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 13
+      lineNumber: 35,
+      columnNumber: 15
     }
   }, "Experience"), __jsx("h5", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.info,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 13
+      lineNumber: 36,
+      columnNumber: 15
     }
-  }, biosData.exp)))), __jsx("div", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.biosRight,
+  }, biosData.exp))), __jsx("div", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.descBottom,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 7
+      lineNumber: 39,
+      columnNumber: 11
     }
   }, __jsx("p", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.bio,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 9
+      lineNumber: 40,
+      columnNumber: 13
     }
-  }, biosData.bio)));
+  }, biosData.bio)))));
 }
 
 /***/ }),
@@ -845,11 +861,13 @@ function Bios({
 
 // Exports
 module.exports = {
-	"biosLeft": "Bios_biosLeft__gC-se",
+	"bios": "Bios_bios__co_XZ",
+	"heading": "Bios_heading__25MWZ",
 	"title": "Bios_title__25_wy",
-	"infoList": "Bios_infoList__3Or_Q",
+	"desc": "Bios_desc__uckAW",
+	"descTop": "Bios_descTop__EuMSm",
 	"item": "Bios_item__fdj86",
-	"biosRight": "Bios_biosRight__1fqQ_"
+	"info": "Bios_info__1-yv_"
 };
 
 /***/ }),
@@ -889,33 +907,33 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 gsap_dist_gsap__WEBPACK_IMPORTED_MODULE_2__["gsap"].registerPlugin(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_3__["ScrollTrigger"]);
 
 function Roster() {
-  let one = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  let two = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  let three = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  let four = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  let roster = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    let sections = [one, two, three, four];
-    gsap_dist_gsap__WEBPACK_IMPORTED_MODULE_2__["gsap"].to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: roster,
-        // markers: true,
-        pin: true,
-        scrub: 1,
-        snap: 1 / (sections.length - 1),
-        start: "top top",
-        end: () => "+=" + document.querySelector("#roster").offsetWidth
-      }
-    });
-  });
+  // let one = useRef(null);
+  // let two = useRef(null);
+  // let three = useRef(null);
+  // let four = useRef(null);
+  // let roster = useRef(null);
+  // useEffect(() => {
+  //   let sections = [one, two, three, four];
+  //   gsap.to(sections, {
+  //     xPercent: -100 * (sections.length - 1),
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: roster,
+  //       markers: true,
+  //       pin: true,
+  //       scrub: 1,
+  //       snap: 1 / (sections.length - 1),
+  //       start: "top top",
+  //       end: () => "+=" + document.querySelector("#roster").offsetWidth,
+  //     },
+  //   });
+  // });
   return __jsx("section", {
     id: "roster",
-    className: ` ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.roster} section`,
-    ref: el => {
-      roster = el;
-    },
+    className: ` ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.roster} section` // ref={(el) => {
+    //   roster = el;
+    // }}
+    ,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -923,10 +941,10 @@ function Roster() {
       columnNumber: 5
     }
   }, __jsx("div", {
-    className: `${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel} ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.one}`,
-    ref: el => {
-      one = el;
-    },
+    className: `${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel} ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.one} slide` // ref={(el) => {
+    //   one = el;
+    // }}
+    ,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -941,15 +959,23 @@ function Roster() {
       lineNumber: 50,
       columnNumber: 9
     }
-  }, "Our Roster")), __jsx("div", {
-    className: `${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel} ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player}`,
-    ref: el => {
-      two = el;
-    },
+  }, "Our ", __jsx("span", {
+    className: _Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.titleColor,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 51,
+      columnNumber: 15
+    }
+  }, "Roster"))), __jsx("div", {
+    className: `${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel} ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player} slide` // ref={(el) => {
+    //   two = el;
+    // }}
+    ,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
       columnNumber: 7
     }
   }, __jsx(_RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -961,7 +987,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 60,
       columnNumber: 9
     }
   }), __jsx(_RosterProfile_RosterProfile__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -970,18 +996,18 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 67,
       columnNumber: 9
     }
   })), __jsx("div", {
-    className: `${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel} ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player}`,
-    ref: el => {
-      three = el;
-    },
+    className: `${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel} ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player} slide` // ref={(el) => {
+    //   three = el;
+    // }}
+    ,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 69,
       columnNumber: 7
     }
   }, __jsx(_RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -993,7 +1019,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 75,
       columnNumber: 9
     }
   }), __jsx(_RosterProfile_RosterProfile__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -1002,18 +1028,18 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 82,
       columnNumber: 9
     }
   })), __jsx("div", {
-    className: `${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel} ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player}`,
-    ref: el => {
-      four = el;
-    },
+    className: `${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel} ${_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player} slide` // ref={(el) => {
+    //   four = el;
+    // }}
+    ,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 84,
       columnNumber: 7
     }
   }, __jsx(_RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1025,7 +1051,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 90,
       columnNumber: 9
     }
   })));
@@ -1043,9 +1069,9 @@ function Roster() {
 // Exports
 module.exports = {
 	"roster": "Roster_roster__BS9kO",
-	"panel": "Roster_panel__1iJ9b",
 	"one": "Roster_one__zp-81",
 	"rosterTitle": "Roster_rosterTitle__1rF5O",
+	"titleColor": "Roster_titleColor__2Vu-K",
 	"player": "Roster_player__kJARM",
 	"three": "Roster_three__2DFk1",
 	"four": "Roster_four__2bbFY"
@@ -1090,6 +1116,14 @@ function RosterCard({
       columnNumber: 5
     }
   }, __jsx("div", {
+    className: _RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.picContainer,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
     className: _RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.rosterPic,
     style: {
       background: `url(${background})`,
@@ -1100,15 +1134,15 @@ function RosterCard({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 7
+      lineNumber: 13,
+      columnNumber: 9
     }
-  }), __jsx("div", {
+  })), __jsx("div", {
     className: _RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.rosterDescription,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 7
     }
   }, __jsx("h2", {
@@ -1116,7 +1150,7 @@ function RosterCard({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 24,
       columnNumber: 9
     }
   }, name), __jsx("p", {
@@ -1124,7 +1158,7 @@ function RosterCard({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 25,
       columnNumber: 9
     }
   }, __jsx("span", {
@@ -1132,7 +1166,7 @@ function RosterCard({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 26,
       columnNumber: 11
     }
   }, position, " "), "\u2022 ", number), __jsx("p", {
@@ -1140,7 +1174,7 @@ function RosterCard({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 28,
       columnNumber: 9
     }
   }, "Playoffs Music Group"), __jsx("div", {
@@ -1148,7 +1182,7 @@ function RosterCard({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 29,
       columnNumber: 9
     }
   }, "Active")));
@@ -1166,12 +1200,14 @@ function RosterCard({
 // Exports
 module.exports = {
 	"rosterCard": "RosterCard_rosterCard__21Is7",
+	"picContainer": "RosterCard_picContainer__2NMLl",
+	"rosterPic": "RosterCard_rosterPic__h4tF8",
 	"rosterDescription": "RosterCard_rosterDescription__2THDK",
 	"descInfo": "RosterCard_descInfo__18yZB",
 	"title": "RosterCard_title__QPdQs",
+	"descTeam": "RosterCard_descTeam__3HH1R",
 	"active": "RosterCard_active__g3Lha",
-	"name": "RosterCard_name__PqG48",
-	"rosterPic": "RosterCard_rosterPic__h4tF8"
+	"name": "RosterCard_name__PqG48"
 };
 
 /***/ }),
@@ -3828,7 +3864,7 @@ function Main() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*****************************!*\
   !*** multi ./pages/main.js ***!
   \*****************************/

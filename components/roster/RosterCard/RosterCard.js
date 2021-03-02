@@ -9,15 +9,17 @@ export default function RosterCard({
 }) {
   return (
     <section className={styles.rosterCard} style={{ backgroundColor: bgColor }}>
-      <div
-        className={styles.rosterPic}
-        style={{
-          background: `url(${background})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+      <div className={styles.picContainer}>
+        <div
+          className={styles.rosterPic}
+          style={{
+            background: `url(${background})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+          }}
+        ></div>
+      </div>
       <div className={styles.rosterDescription}>
         <h2 className={styles.name}>{name}</h2>
         <p className={styles.descInfo}>

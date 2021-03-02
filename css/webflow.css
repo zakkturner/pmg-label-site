@@ -1911,11 +1911,11 @@ p {
 .hero-heading {
   margin-top: 0px;
   margin-bottom: 40px;
-  font-family: Oswald, sans-serif;
+  font-family: Roboto, sans-serif;
   color: #fff;
   font-size: 100px;
   line-height: 85px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -1965,7 +1965,7 @@ p {
   margin-top: 0px;
   margin-bottom: 40px;
   margin-left: 0px;
-  font-family: Oswald, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 45px;
   line-height: 51px;
   font-weight: 200;
@@ -2486,7 +2486,7 @@ p {
   align-items: center;
 }
 
-.slide {
+/* .slide {
   background-image: url("../images/IMG_6735.jpg");
   background-position: 50% 0%;
   background-size: cover;
@@ -2497,7 +2497,7 @@ p {
   background-position: center top;
   background-size: cover;
   box-shadow: inset 0 0 100px black;
-}
+} */
 
 .slider {
   height: 500px;

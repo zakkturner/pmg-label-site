@@ -695,94 +695,110 @@ function Bios(_ref) {
   var biosData = _ref.biosData;
   //   console.log(biosData.name);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.biosLeft,
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.bios,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 24,
       columnNumber: 7
     }
-  }, __jsx("h3", {
+  }, __jsx("div", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.heading,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 9
+    }
+  }, __jsx("h4", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 9
+      lineNumber: 26,
+      columnNumber: 11
     }
-  }, "Player Info"), __jsx("ul", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.infoList,
+  }, "Player Info")), __jsx("div", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.desc,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 28,
       columnNumber: 9
+    }
+  }, __jsx("ul", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.descTop,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 11
     }
   }, __jsx("li", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 11
+      lineNumber: 30,
+      columnNumber: 13
     }
-  }, __jsx("span", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.infoTitle,
+  }, __jsx("h6", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 13
+      lineNumber: 31,
+      columnNumber: 15
     }
   }, "Hometown"), __jsx("h5", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.info,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 13
+      lineNumber: 32,
+      columnNumber: 15
     }
   }, biosData.home)), __jsx("li", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 11
+      lineNumber: 34,
+      columnNumber: 13
     }
-  }, __jsx("span", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.infoTitle,
+  }, __jsx("h6", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 13
+      lineNumber: 35,
+      columnNumber: 15
     }
   }, "Experience"), __jsx("h5", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.info,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 13
+      lineNumber: 36,
+      columnNumber: 15
     }
-  }, biosData.exp)))), __jsx("div", {
-    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.biosRight,
+  }, biosData.exp))), __jsx("div", {
+    className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.descBottom,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 7
+      lineNumber: 39,
+      columnNumber: 11
     }
   }, __jsx("p", {
     className: _Bios_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.bio,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 9
+      lineNumber: 40,
+      columnNumber: 13
     }
-  }, biosData.bio)));
+  }, biosData.bio)))));
 }
 
 /***/ }),
@@ -883,35 +899,33 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 gsap_dist_gsap__WEBPACK_IMPORTED_MODULE_2__["gsap"].registerPlugin(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_3__["ScrollTrigger"]);
 
 function Roster() {
-  var one = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  var two = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  var three = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  var four = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  var roster = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    var sections = [one, two, three, four];
-    gsap_dist_gsap__WEBPACK_IMPORTED_MODULE_2__["gsap"].to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: roster,
-        // markers: true,
-        pin: true,
-        scrub: 1,
-        snap: 1 / (sections.length - 1),
-        start: "top top",
-        end: function end() {
-          return "+=" + document.querySelector("#roster").offsetWidth;
-        }
-      }
-    });
-  });
+  // let one = useRef(null);
+  // let two = useRef(null);
+  // let three = useRef(null);
+  // let four = useRef(null);
+  // let roster = useRef(null);
+  // useEffect(() => {
+  //   let sections = [one, two, three, four];
+  //   gsap.to(sections, {
+  //     xPercent: -100 * (sections.length - 1),
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: roster,
+  //       markers: true,
+  //       pin: true,
+  //       scrub: 1,
+  //       snap: 1 / (sections.length - 1),
+  //       start: "top top",
+  //       end: () => "+=" + document.querySelector("#roster").offsetWidth,
+  //     },
+  //   });
+  // });
   return __jsx("section", {
     id: "roster",
-    className: " ".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.roster, " section"),
-    ref: function ref(el) {
-      roster = el;
-    },
+    className: " ".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.roster, " section") // ref={(el) => {
+    //   roster = el;
+    // }}
+    ,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -919,10 +933,10 @@ function Roster() {
       columnNumber: 5
     }
   }, __jsx("div", {
-    className: "".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel, " ").concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.one),
-    ref: function ref(el) {
-      one = el;
-    },
+    className: "".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel, " ").concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.one, " slide") // ref={(el) => {
+    //   one = el;
+    // }}
+    ,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -937,15 +951,23 @@ function Roster() {
       lineNumber: 50,
       columnNumber: 9
     }
-  }, "Our Roster")), __jsx("div", {
-    className: "".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel, " ").concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player),
-    ref: function ref(el) {
-      two = el;
-    },
+  }, "Our ", __jsx("span", {
+    className: _Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.titleColor,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 51,
+      columnNumber: 15
+    }
+  }, "Roster"))), __jsx("div", {
+    className: "".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel, " ").concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player, " slide") // ref={(el) => {
+    //   two = el;
+    // }}
+    ,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
       columnNumber: 7
     }
   }, __jsx(_RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -957,7 +979,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 60,
       columnNumber: 9
     }
   }), __jsx(_RosterProfile_RosterProfile__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -966,18 +988,18 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 67,
       columnNumber: 9
     }
   })), __jsx("div", {
-    className: "".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel, " ").concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player),
-    ref: function ref(el) {
-      three = el;
-    },
+    className: "".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel, " ").concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player, " slide") // ref={(el) => {
+    //   three = el;
+    // }}
+    ,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 69,
       columnNumber: 7
     }
   }, __jsx(_RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -989,7 +1011,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 75,
       columnNumber: 9
     }
   }), __jsx(_RosterProfile_RosterProfile__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -998,18 +1020,18 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 82,
       columnNumber: 9
     }
   })), __jsx("div", {
-    className: "".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel, " ").concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player),
-    ref: function ref(el) {
-      four = el;
-    },
+    className: "".concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.panel, " ").concat(_Roster_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.player, " slide") // ref={(el) => {
+    //   four = el;
+    // }}
+    ,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 84,
       columnNumber: 7
     }
   }, __jsx(_RosterCard_RosterCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1021,7 +1043,7 @@ function Roster() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 90,
       columnNumber: 9
     }
   })));
@@ -1126,6 +1148,14 @@ function RosterCard(_ref) {
       columnNumber: 5
     }
   }, __jsx("div", {
+    className: _RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.picContainer,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
     className: _RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.rosterPic,
     style: {
       background: "url(".concat(background, ")"),
@@ -1136,15 +1166,15 @@ function RosterCard(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 7
+      lineNumber: 13,
+      columnNumber: 9
     }
-  }), __jsx("div", {
+  })), __jsx("div", {
     className: _RosterCard_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.rosterDescription,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 7
     }
   }, __jsx("h2", {
@@ -1152,7 +1182,7 @@ function RosterCard(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 24,
       columnNumber: 9
     }
   }, name), __jsx("p", {
@@ -1160,7 +1190,7 @@ function RosterCard(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 25,
       columnNumber: 9
     }
   }, __jsx("span", {
@@ -1168,7 +1198,7 @@ function RosterCard(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 26,
       columnNumber: 11
     }
   }, position, " "), "\u2022 ", number), __jsx("p", {
@@ -1176,7 +1206,7 @@ function RosterCard(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 28,
       columnNumber: 9
     }
   }, "Playoffs Music Group"), __jsx("div", {
@@ -1184,7 +1214,7 @@ function RosterCard(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 29,
       columnNumber: 9
     }
   }, "Active")));
@@ -17589,14 +17619,16 @@ exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".Bios_biosLeft__gC-se {\n  width: 40%; }\n  .Bios_biosLeft__gC-se .Bios_title__25_wy {\n    font-weight: 600;\n    border-right: 1px #eae7e7 solid;\n    padding: 20px 20px 0 5px; }\n  .Bios_biosLeft__gC-se .Bios_infoList__3Or_Q {\n    padding-left: 0;\n    width: 59%;\n    border-right: 1px #eae7e7 solid;\n    margin-bottom: 0; }\n    .Bios_biosLeft__gC-se .Bios_infoList__3Or_Q .Bios_item__fdj86 {\n      list-style-type: none;\n      padding: 25px;\n      text-align: center; }\n    .Bios_biosLeft__gC-se .Bios_infoList__3Or_Q .Bios_item__fdj86:nth-child(1) {\n      border-bottom: 1px #eae7e7 solid; }\n    .Bios_biosLeft__gC-se .Bios_infoList__3Or_Q .Bios_item__fdj86:nth-child(2) {\n      padding-top: 5px; }\n\n.Bios_biosRight__1fqQ_ {\n  width: 60%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-site/components/roster/Bios/Bios.module.scss"],"names":[],"mappings":"AAAA;EACE,UAAU,EAAA;EADZ;IAII,gBAAgB;IAChB,+BAA+B;IAC/B,wBAAwB,EAAA;EAN5B;IASI,eAAe;IACf,UAAU;IACV,+BAA+B;IAC/B,gBAAgB,EAAA;IAZpB;MAcM,qBAAqB;MACrB,aAAa;MACb,kBAAkB,EAAA;IAhBxB;MAmBM,gCAAgC,EAAA;IAnBtC;MAsBM,gBAAgB,EAAA;;AAItB;EACE,UAAU;EACV,aAAa;EACb,uBAAuB;EACvB,mBAAmB,EAAA","file":"Bios.module.scss","sourcesContent":[".biosLeft {\r\n  width: 40%;\r\n\r\n  .title {\r\n    font-weight: 600;\r\n    border-right: 1px #eae7e7 solid;\r\n    padding: 20px 20px 0 5px;\r\n  }\r\n  .infoList {\r\n    padding-left: 0;\r\n    width: 59%;\r\n    border-right: 1px #eae7e7 solid;\r\n    margin-bottom: 0;\r\n    .item {\r\n      list-style-type: none;\r\n      padding: 25px;\r\n      text-align: center;\r\n    }\r\n    .item:nth-child(1) {\r\n      border-bottom: 1px #eae7e7 solid;\r\n    }\r\n    .item:nth-child(2) {\r\n      padding-top: 5px;\r\n    }\r\n  }\r\n}\r\n.biosRight {\r\n  width: 60%;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n"]}]);
+exports.push([module.i, ".Bios_bios__co_XZ {\n  width: 100%;\n  height: auto;\n  background-color: #fff;\n  margin: 0 auto;\n  padding: 20px 16px; }\n  .Bios_bios__co_XZ .Bios_heading__25MWZ .Bios_title__25_wy {\n    font-size: 16px;\n    font-weight: 700;\n    text-transform: uppercase; }\n  .Bios_bios__co_XZ .Bios_desc__uckAW .Bios_descTop__EuMSm {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    border-bottom: 1px solid #eaeaea;\n    padding: 20px 0; }\n    .Bios_bios__co_XZ .Bios_desc__uckAW .Bios_descTop__EuMSm .Bios_item__fdj86 {\n      list-style-type: none; }\n      .Bios_bios__co_XZ .Bios_desc__uckAW .Bios_descTop__EuMSm .Bios_item__fdj86 .Bios_title__25_wy {\n        color: gray;\n        margin: 0; }\n      .Bios_bios__co_XZ .Bios_desc__uckAW .Bios_descTop__EuMSm .Bios_item__fdj86 .Bios_info__1-yv_ {\n        font-weight: 700;\n        margin: 0; }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-site/components/roster/Bios/Bios.module.scss"],"names":[],"mappings":"AAiCA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,cAAc;EACd,kBAAkB,EAAA;EALpB;IAQM,eAAe;IACf,gBAAgB;IAChB,yBAAyB,EAAA;EAV/B;IAeM,aAAa;IACb,8BAA8B;IAC9B,gCAAgC;IAChC,eAAe,EAAA;IAlBrB;MAoBQ,qBAAqB,EAAA;MApB7B;QAsBU,WAAW;QACX,SAAS,EAAA;MAvBnB;QA0BU,gBAAgB;QAChB,SAAS,EAAA","file":"Bios.module.scss","sourcesContent":["// .biosLeft {\r\n//   width: 40%;\r\n\r\n//   .title {\r\n//     font-weight: 600;\r\n//     border-right: 1px #eae7e7 solid;\r\n//     padding: 20px 20px 0 5px;\r\n//   }\r\n//   .infoList {\r\n//     padding-left: 0;\r\n//     width: 59%;\r\n//     border-right: 1px #eae7e7 solid;\r\n//     margin-bottom: 0;\r\n//     .item {\r\n//       list-style-type: none;\r\n//       padding: 25px;\r\n//       text-align: center;\r\n//     }\r\n//     .item:nth-child(1) {\r\n//       border-bottom: 1px #eae7e7 solid;\r\n//     }\r\n//     .item:nth-child(2) {\r\n//       padding-top: 5px;\r\n//     }\r\n//   }\r\n// }\r\n// .biosRight {\r\n//   width: 60%;\r\n//   display: flex;\r\n//   justify-content: center;\r\n//   align-items: center;\r\n// }\r\n\r\n.bios {\r\n  width: 100%;\r\n  height: auto;\r\n  background-color: #fff;\r\n  margin: 0 auto;\r\n  padding: 20px 16px;\r\n  .heading {\r\n    .title {\r\n      font-size: 16px;\r\n      font-weight: 700;\r\n      text-transform: uppercase;\r\n    }\r\n  }\r\n  .desc {\r\n    .descTop {\r\n      display: grid;\r\n      grid-template-columns: 1fr 1fr;\r\n      border-bottom: 1px solid #eaeaea;\r\n      padding: 20px 0;\r\n      .item {\r\n        list-style-type: none;\r\n        .title {\r\n          color: gray;\r\n          margin: 0;\r\n        }\r\n        .info {\r\n          font-weight: 700;\r\n          margin: 0;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"]}]);
 // Exports
 exports.locals = {
-	"biosLeft": "Bios_biosLeft__gC-se",
+	"bios": "Bios_bios__co_XZ",
+	"heading": "Bios_heading__25MWZ",
 	"title": "Bios_title__25_wy",
-	"infoList": "Bios_infoList__3Or_Q",
+	"desc": "Bios_desc__uckAW",
+	"descTop": "Bios_descTop__EuMSm",
 	"item": "Bios_item__fdj86",
-	"biosRight": "Bios_biosRight__1fqQ_"
+	"info": "Bios_info__1-yv_"
 };
 
 /***/ }),
@@ -17611,16 +17643,16 @@ exports.locals = {
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Imports
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../../public/images/basketball.jpg */ "./public/images/basketball.jpg");
+var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../../public/images/bbbg.jpg */ "./public/images/bbbg.jpg");
 var ___CSS_LOADER_URL_IMPORT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_0___);
 // Module
-exports.push([module.i, ".Roster_roster__BS9kO {\n  padding: 0 !important; }\n  .Roster_roster__BS9kO div {\n    display: flex !important;\n    flex-wrap: nowrap;\n    width: 620%;\n    height: 100%; }\n    .Roster_roster__BS9kO div .Roster_panel__1iJ9b {\n      height: 100%; }\n    .Roster_roster__BS9kO div .Roster_one__zp-81 {\n      background: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ") no-repeat center center fixed;\n      background-size: cover; }\n      .Roster_roster__BS9kO div .Roster_one__zp-81 .Roster_rosterTitle__1rF5O {\n        color: #fff;\n        font-size: 50px;\n        position: absolute;\n        left: 10%;\n        top: 50%; }\n    .Roster_roster__BS9kO div .Roster_player__kJARM {\n      display: flex;\n      flex-direction: column; }\n    .Roster_roster__BS9kO div .Roster_three__2DFk1 {\n      background: purple; }\n    .Roster_roster__BS9kO div .Roster_four__2bbFY {\n      background: green; }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-site/components/roster/Roster.module.scss"],"names":[],"mappings":"AAAA;EACE,qBAAqB,EAAA;EADvB;IAII,wBAAwB;IACxB,iBAAiB;IACjB,WAAW;IACX,YAAY,EAAA;IAPhB;MAUM,YAAY,EAAA;IAVlB;MAaM,4EACc;MAId,sBAAsB,EAAA;MAlB5B;QAqBQ,WAAW;QACX,eAAe;QACf,kBAAkB;QAClB,SAAS;QACT,QAAQ,EAAA;IAzBhB;MA6BM,aAAa;MACb,sBAAsB,EAAA;IA9B5B;MAiCM,kBAAkB,EAAA;IAjCxB;MAoCM,iBAAiB,EAAA","file":"Roster.module.scss","sourcesContent":[".roster {\r\n  padding: 0 !important;\r\n  //   height: 100vh;\r\n  div {\r\n    display: flex !important;\r\n    flex-wrap: nowrap;\r\n    width: 620%;\r\n    height: 100%;\r\n    .panel {\r\n      //   width: 100% !important;\r\n      height: 100%;\r\n    }\r\n    .one {\r\n      background: url(\"../../public/images/basketball.jpg\") no-repeat center\r\n        center fixed;\r\n      -webkit-background-size: cover;\r\n      -moz-background-size: cover;\r\n      -o-background-size: cover;\r\n      background-size: cover;\r\n\r\n      .rosterTitle {\r\n        color: #fff;\r\n        font-size: 50px;\r\n        position: absolute;\r\n        left: 10%;\r\n        top: 50%;\r\n      }\r\n    }\r\n    .player {\r\n      display: flex;\r\n      flex-direction: column;\r\n    }\r\n    .three {\r\n      background: purple;\r\n    }\r\n    .four {\r\n      background: green;\r\n    }\r\n  }\r\n}\r\n"]}]);
+exports.push([module.i, ".Roster_roster__BS9kO {\n  padding: 0 !important; }\n  .Roster_roster__BS9kO div .Roster_one__zp-81 {\n    background: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ") no-repeat 10% 20% fixed;\n    background-size: cover; }\n    .Roster_roster__BS9kO div .Roster_one__zp-81 .Roster_rosterTitle__1rF5O {\n      color: #000;\n      font-size: 50px;\n      position: absolute;\n      left: 1%;\n      top: 27%; }\n      .Roster_roster__BS9kO div .Roster_one__zp-81 .Roster_rosterTitle__1rF5O .Roster_titleColor__2Vu-K {\n        color: #ffc331; }\n  .Roster_roster__BS9kO div .Roster_player__kJARM {\n    display: flex;\n    flex-direction: column; }\n  .Roster_roster__BS9kO div .Roster_three__2DFk1 {\n    background: purple; }\n  .Roster_roster__BS9kO div .Roster_four__2bbFY {\n    background: green; }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-site/components/roster/Roster.module.scss"],"names":[],"mappings":"AAAA;EACE,qBAAqB,EAAA;EADvB;IAUM,sEAAuE;IAIvE,sBAAsB,EAAA;IAd5B;MAiBQ,WAAW;MACX,eAAe;MACf,kBAAkB;MAClB,QAAQ;MACR,QAAQ,EAAA;MArBhB;QAuBU,cAAc,EAAA;EAvBxB;IA4BM,aAAa;IACb,sBAAsB,EAAA;EA7B5B;IAgCM,kBAAkB,EAAA;EAhCxB;IAmCM,iBAAiB,EAAA","file":"Roster.module.scss","sourcesContent":[".roster {\r\n  padding: 0 !important;\r\n  //   height: 100vh;\r\n  div {\r\n    // .panel {\r\n    //   //   width: 100% !important;\r\n    //   height: 100%;\r\n    // }\r\n\r\n    .one {\r\n      background: url(\"../../public/images/bbbg.jpg\") no-repeat 10% 20% fixed;\r\n      -webkit-background-size: cover;\r\n      -moz-background-size: cover;\r\n      -o-background-size: cover;\r\n      background-size: cover;\r\n\r\n      .rosterTitle {\r\n        color: #000;\r\n        font-size: 50px;\r\n        position: absolute;\r\n        left: 1%;\r\n        top: 27%;\r\n        .titleColor {\r\n          color: #ffc331;\r\n        }\r\n      }\r\n    }\r\n    .player {\r\n      display: flex;\r\n      flex-direction: column;\r\n    }\r\n    .three {\r\n      background: purple;\r\n    }\r\n    .four {\r\n      background: green;\r\n    }\r\n  }\r\n}\r\n\r\n// .roster {\r\n//   padding: 0 !important;\r\n//   //   height: 100vh;\r\n//   div {\r\n//     display: flex !important;\r\n//     flex-wrap: nowrap;\r\n//     width: 620%;\r\n//     height: 100%;\r\n//     .panel {\r\n//       //   width: 100% !important;\r\n//       height: 100%;\r\n//     }\r\n//     .one {\r\n//       background: url(\"../../public/images/basketball.jpg\") no-repeat center\r\n//         center fixed;\r\n//       -webkit-background-size: cover;\r\n//       -moz-background-size: cover;\r\n//       -o-background-size: cover;\r\n//       background-size: cover;\r\n\r\n//       .rosterTitle {\r\n//         color: #fff;\r\n//         font-size: 50px;\r\n//         position: absolute;\r\n//         left: 10%;\r\n//         top: 50%;\r\n//       }\r\n//     }\r\n//     .player {\r\n//       display: flex;\r\n//       flex-direction: column;\r\n//     }\r\n//     .three {\r\n//       background: purple;\r\n//     }\r\n//     .four {\r\n//       background: green;\r\n//     }\r\n//   }\r\n// }\r\n"]}]);
 // Exports
 exports.locals = {
 	"roster": "Roster_roster__BS9kO",
-	"panel": "Roster_panel__1iJ9b",
 	"one": "Roster_one__zp-81",
 	"rosterTitle": "Roster_rosterTitle__1rF5O",
+	"titleColor": "Roster_titleColor__2Vu-K",
 	"player": "Roster_player__kJARM",
 	"three": "Roster_three__2DFk1",
 	"four": "Roster_four__2bbFY"
@@ -17637,16 +17669,18 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".RosterCard_rosterCard__21Is7 {\n  width: 100%;\n  display: grid !important;\n  grid-template-columns: 30% 1fr;\n  padding: 20px 20px 0 40px; }\n  .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK {\n    display: flex;\n    flex-direction: column; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_descInfo__18yZB {\n      margin-bottom: 0; }\n      .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_descInfo__18yZB .RosterCard_title__QPdQs {\n        font-weight: 700; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_active__g3Lha {\n      background: green;\n      width: 50px;\n      border-radius: 45px;\n      color: #fff;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      height: 20px;\n      margin-top: 5px; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_name__PqG48 {\n      font-size: 50px;\n      font-weight: 700; }\n  .RosterCard_rosterCard__21Is7 .RosterCard_rosterPic__h4tF8 {\n    width: 350px;\n    height: 350px; }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-site/components/roster/RosterCard/RosterCard.module.scss"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,wBAAwB;EACxB,8BAA8B;EAC9B,yBAAyB,EAAA;EAJ3B;IAOI,aAAa;IACb,sBAAsB,EAAA;IAR1B;MAUM,gBAAgB,EAAA;MAVtB;QAYQ,gBAAgB,EAAA;IAZxB;MAgBM,iBAAiB;MACjB,WAAW;MACX,mBAAmB;MACnB,WAAW;MACX,aAAa;MACb,uBAAuB;MACvB,mBAAmB;MACnB,YAAY;MACZ,eAAe,EAAA;IAxBrB;MA2BM,eAAe;MACf,gBAAgB,EAAA;EA5BtB;IAgCI,YAAY;IACZ,aAAa,EAAA","file":"RosterCard.module.scss","sourcesContent":[".rosterCard {\r\n  width: 100%;\r\n  display: grid !important;\r\n  grid-template-columns: 30% 1fr;\r\n  padding: 20px 20px 0 40px;\r\n\r\n  .rosterDescription {\r\n    display: flex;\r\n    flex-direction: column;\r\n    .descInfo {\r\n      margin-bottom: 0;\r\n      .title {\r\n        font-weight: 700;\r\n      }\r\n    }\r\n    .active {\r\n      background: green;\r\n      width: 50px;\r\n      border-radius: 45px;\r\n      color: #fff;\r\n      display: flex;\r\n      justify-content: center;\r\n      align-items: center;\r\n      height: 20px;\r\n      margin-top: 5px;\r\n    }\r\n    .name {\r\n      font-size: 50px;\r\n      font-weight: 700;\r\n    }\r\n  }\r\n  .rosterPic {\r\n    width: 350px;\r\n    height: 350px;\r\n  }\r\n}\r\n"]}]);
+exports.push([module.i, ".RosterCard_rosterCard__21Is7 {\n  width: 100%;\n  display: grid !important;\n  grid-template-columns: 1fr 1fr;\n  padding: 20px 20px 0 40px;\n  grid-gap: 1rem;\n  align-items: flex-end;\n  height: 12rem; }\n  .RosterCard_rosterCard__21Is7 .RosterCard_picContainer__2NMLl {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: flex-end; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_picContainer__2NMLl .RosterCard_rosterPic__h4tF8 {\n      width: 100%;\n      height: 100%; }\n  .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK {\n    display: flex;\n    flex-direction: column;\n    align-self: center; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_descInfo__18yZB {\n      margin-bottom: 0;\n      font-size: 14px; }\n      .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_descInfo__18yZB .RosterCard_title__QPdQs {\n        font-weight: 700; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_descTeam__3HH1R {\n      margin-bottom: 5px; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_active__g3Lha {\n      background: green;\n      width: 50px;\n      border-radius: 45px;\n      color: #fff;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      height: 20px;\n      margin-top: 5px; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_name__PqG48 {\n      font-size: 20px;\n      font-weight: 700; }\n\n@media screen and (min-width: 768px) {\n  .RosterCard_rosterCard__21Is7 {\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 4rem;\n    height: 20rem; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterPic__h4tF8 {\n      width: 100%;\n      height: 100%; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_name__PqG48 {\n      font-weight: 700;\n      font-size: 32px; } }\n\n@media screen and (min-width: 834px) {\n  .RosterCard_rosterCard__21Is7 {\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 4rem;\n    height: 26rem; } }\n\n@media screen and (min-width: 1024px) {\n  .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK {\n    align-self: center; } }\n\n@media screen and (min-width: 1280px) {\n  .RosterCard_rosterCard__21Is7 {\n    grid-template-columns: 35% 1fr;\n    height: 26rem; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK {\n      align-self: center; }\n      .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_name__PqG48 {\n        font-size: 45px; }\n      .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_descInfo__18yZB,\n      .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_descTeam__3HH1R {\n        font-size: 16px; } }\n\n@media screen and (min-width: 1440px) {\n  .RosterCard_rosterCard__21Is7 {\n    grid-template-columns: 1fr 1fr;\n    height: 25rem; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_picContainer__2NMLl {\n      width: 45%;\n      height: 75%;\n      display: flex;\n      align-items: flex-end;\n      justify-self: center; }\n    .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK {\n      align-self: center; }\n      .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_name__PqG48 {\n        font-size: 45px; }\n      .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_descInfo__18yZB,\n      .RosterCard_rosterCard__21Is7 .RosterCard_rosterDescription__2THDK .RosterCard_descTeam__3HH1R {\n        font-size: 16px; } }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-site/components/roster/RosterCard/RosterCard.module.scss"],"names":[],"mappings":"AAAA;EACE,WAAW;EAEX,wBAAwB;EACxB,8BAA8B;EAC9B,yBAAyB;EACzB,cAAc;EACd,qBAAqB;EACrB,aAAa,EAAA;EARf;IAUI,WAAW;IACX,YAAY;IACZ,aAAa;IACb,qBAAqB,EAAA;IAbzB;MAeM,WAAW;MACX,YAAY,EAAA;EAhBlB;IAoBI,aAAa;IACb,sBAAsB;IACtB,kBAAkB,EAAA;IAtBtB;MAwBM,gBAAgB;MAChB,eAAe,EAAA;MAzBrB;QA2BQ,gBAAgB,EAAA;IA3BxB;MA+BM,kBAAkB,EAAA;IA/BxB;MAkCM,iBAAiB;MACjB,WAAW;MACX,mBAAmB;MACnB,WAAW;MACX,aAAa;MACb,uBAAuB;MACvB,mBAAmB;MACnB,YAAY;MACZ,eAAe,EAAA;IA1CrB;MA6CM,eAAe;MACf,gBAAgB,EAAA;;AAItB;EACE;IACE,8BAA8B;IAC9B,cAAc;IACd,aAAa,EAAA;IAHf;MAKI,WAAW;MACX,YAAY,EAAA;IANhB;MAUM,gBAAgB;MAChB,eAAe,EAAA,EAChB;;AAKP;EACE;IACE,8BAA8B;IAC9B,cAAc;IACd,aAAa,EAAA,EAKd;;AAGH;EACE;IAOI,kBAAkB,EAAA,EAKnB;;AAIL;EACE;IACE,8BAA8B;IAC9B,aAAa,EAAA;IAFf;MAII,kBAAkB,EAAA;MAJtB;QAMM,eAAe,EAAA;MANrB;;QAUM,eAAe,EAAA,EAChB;;AAKP;EACE;IACE,8BAA8B;IAC9B,aAAa,EAAA;IAFf;MAII,UAAU;MACV,WAAW;MACX,aAAa;MACb,qBAAqB;MACrB,oBAAoB,EAAA;IARxB;MAWI,kBAAkB,EAAA;MAXtB;QAaM,eAAe,EAAA;MAbrB;;QAiBM,eAAe,EAAA,EAChB","file":"RosterCard.module.scss","sourcesContent":[".rosterCard {\r\n  width: 100%;\r\n\r\n  display: grid !important;\r\n  grid-template-columns: 1fr 1fr;\r\n  padding: 20px 20px 0 40px;\r\n  grid-gap: 1rem;\r\n  align-items: flex-end;\r\n  height: 12rem;\r\n  .picContainer {\r\n    width: 100%;\r\n    height: 100%;\r\n    display: flex;\r\n    align-items: flex-end;\r\n    .rosterPic {\r\n      width: 100%;\r\n      height: 100%;\r\n    }\r\n  }\r\n  .rosterDescription {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-self: center;\r\n    .descInfo {\r\n      margin-bottom: 0;\r\n      font-size: 14px;\r\n      .title {\r\n        font-weight: 700;\r\n      }\r\n    }\r\n    .descTeam {\r\n      margin-bottom: 5px;\r\n    }\r\n    .active {\r\n      background: green;\r\n      width: 50px;\r\n      border-radius: 45px;\r\n      color: #fff;\r\n      display: flex;\r\n      justify-content: center;\r\n      align-items: center;\r\n      height: 20px;\r\n      margin-top: 5px;\r\n    }\r\n    .name {\r\n      font-size: 20px;\r\n      font-weight: 700;\r\n    }\r\n  }\r\n}\r\n@media screen and (min-width: 768px) {\r\n  .rosterCard {\r\n    grid-template-columns: 1fr 1fr;\r\n    grid-gap: 4rem;\r\n    height: 20rem;\r\n    .rosterPic {\r\n      width: 100%;\r\n      height: 100%;\r\n    }\r\n    .rosterDescription {\r\n      .name {\r\n        font-weight: 700;\r\n        font-size: 32px;\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media screen and (min-width: 834px) {\r\n  .rosterCard {\r\n    grid-template-columns: 1fr 1fr;\r\n    grid-gap: 4rem;\r\n    height: 26rem;\r\n    .rosterPic {\r\n      // width: 355px;\r\n      // height: 300px;\r\n    }\r\n  }\r\n}\r\n\r\n@media screen and (min-width: 1024px) {\r\n  .rosterCard {\r\n    // height: 35%;\r\n    .rosterPic {\r\n      // width: 400px;\r\n      // height: 300px;\r\n    }\r\n    .rosterDescription {\r\n      align-self: center;\r\n      .name {\r\n        // font-weight: 700;\r\n        // font-size: 40px;\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media screen and (min-width: 1280px) {\r\n  .rosterCard {\r\n    grid-template-columns: 35% 1fr;\r\n    height: 26rem;\r\n    .rosterDescription {\r\n      align-self: center;\r\n      .name {\r\n        font-size: 45px;\r\n      }\r\n      .descInfo,\r\n      .descTeam {\r\n        font-size: 16px;\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n@media screen and (min-width: 1440px) {\r\n  .rosterCard {\r\n    grid-template-columns: 1fr 1fr;\r\n    height: 25rem;\r\n    .picContainer {\r\n      width: 45%;\r\n      height: 75%;\r\n      display: flex;\r\n      align-items: flex-end;\r\n      justify-self: center;\r\n    }\r\n    .rosterDescription {\r\n      align-self: center;\r\n      .name {\r\n        font-size: 45px;\r\n      }\r\n      .descInfo,\r\n      .descTeam {\r\n        font-size: 16px;\r\n      }\r\n    }\r\n  }\r\n}\r\n// .rosterCard {\r\n//   width: 100%;\r\n//   display: grid !important;\r\n//   grid-template-columns: 30% 1fr;\r\n//   padding: 20px 20px 0 40px;\r\n\r\n//   .rosterDescription {\r\n//     display: flex;\r\n//     flex-direction: column;\r\n//     .descInfo {\r\n//       margin-bottom: 0;\r\n//       .title {\r\n//         font-weight: 700;\r\n//       }\r\n//     }\r\n//     .active {\r\n//       background: green;\r\n//       width: 50px;\r\n//       border-radius: 45px;\r\n//       color: #fff;\r\n//       display: flex;\r\n//       justify-content: center;\r\n//       align-items: center;\r\n//       height: 20px;\r\n//       margin-top: 5px;\r\n//     }\r\n//     .name {\r\n//       font-size: 50px;\r\n//       font-weight: 700;\r\n//     }\r\n//   }\r\n//   .rosterPic {\r\n//     width: 350px;\r\n//     height: 350px;\r\n//   }\r\n// }\r\n"]}]);
 // Exports
 exports.locals = {
 	"rosterCard": "RosterCard_rosterCard__21Is7",
+	"picContainer": "RosterCard_picContainer__2NMLl",
+	"rosterPic": "RosterCard_rosterPic__h4tF8",
 	"rosterDescription": "RosterCard_rosterDescription__2THDK",
 	"descInfo": "RosterCard_descInfo__18yZB",
 	"title": "RosterCard_title__QPdQs",
+	"descTeam": "RosterCard_descTeam__3HH1R",
 	"active": "RosterCard_active__g3Lha",
-	"name": "RosterCard_name__PqG48",
-	"rosterPic": "RosterCard_rosterPic__h4tF8"
+	"name": "RosterCard_name__PqG48"
 };
 
 /***/ }),
@@ -17663,7 +17697,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);"]);
 // Module
-exports.push([module.i, ".RosterProfile_rProfile__31ogx {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  background-color: #eee; }\n  .RosterProfile_rProfile__31ogx .RosterProfile_navContainer__BhCCU {\n    background: #fff;\n    width: 100%;\n    height: 50px;\n    box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);\n    margin-bottom: 30px; }\n    .RosterProfile_rProfile__31ogx .RosterProfile_navContainer__BhCCU .RosterProfile_subNav__3QJaj {\n      display: flex;\n      list-style-type: none;\n      padding: 20px 40px; }\n      .RosterProfile_rProfile__31ogx .RosterProfile_navContainer__BhCCU .RosterProfile_subNav__3QJaj .RosterProfile_item__n_Bu5 {\n        font-size: 14px;\n        margin-right: 50px;\n        cursor: pointer;\n        color: black;\n        font-weight: 600; }\n      .RosterProfile_rProfile__31ogx .RosterProfile_navContainer__BhCCU .RosterProfile_subNav__3QJaj .RosterProfile_active__1Oqz6 {\n        border-top: 1px solid black; }\n  .RosterProfile_rProfile__31ogx .RosterProfile_profileContainer__2CsKM {\n    width: 100%; }\n    .RosterProfile_rProfile__31ogx .RosterProfile_profileContainer__2CsKM .RosterProfile_statsContainer__1q6mK {\n      background-color: #fff;\n      color: #000;\n      margin: 30px;\n      width: 10%;\n      height: auto; }\n    .RosterProfile_rProfile__31ogx .RosterProfile_profileContainer__2CsKM .RosterProfile_biosContainer__2R2-M {\n      background-color: #fff;\n      color: #000;\n      margin: 30px;\n      width: 10%;\n      height: 50%; }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-site/components/roster/RosterProfile/RosterProfile.module.scss"],"names":[],"mappings":"AAEA;EACE,WAAW;EACX,aAAa;EACb,sBAAsB;EACtB,sBAAsB,EAAA;EAJxB;IAMI,gBAAgB;IAChB,WAAW;IACX,YAAY;IAGZ,iDAAiD;IACjD,mBAAmB,EAAA;IAZvB;MAcM,aAAa;MACb,qBAAqB;MACrB,kBAAkB,EAAA;MAhBxB;QAkBQ,eAAe;QACf,kBAAkB;QAClB,eAAe;QACf,YAAY;QACZ,gBAAgB,EAAA;MAtBxB;QAyBQ,2BAA2B,EAAA;EAzBnC;IA8BI,WAAW,EAAA;IA9Bf;MAgCM,sBAAsB;MACtB,WAAW;MACX,YAAY;MACZ,UAAU;MACV,YAAY,EAAA;IApClB;MAuCM,sBAAsB;MACtB,WAAW;MACX,YAAY;MACZ,UAAU;MACV,WAAW,EAAA","file":"RosterProfile.module.scss","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap\");\r\n\r\n.rProfile {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-color: #eee;\r\n  .navContainer {\r\n    background: #fff;\r\n    width: 100%;\r\n    height: 50px;\r\n    -webkit-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);\r\n    -moz-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);\r\n    box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);\r\n    margin-bottom: 30px;\r\n    .subNav {\r\n      display: flex;\r\n      list-style-type: none;\r\n      padding: 20px 40px;\r\n      .item {\r\n        font-size: 14px;\r\n        margin-right: 50px;\r\n        cursor: pointer;\r\n        color: black;\r\n        font-weight: 600;\r\n      }\r\n      .active {\r\n        border-top: 1px solid black;\r\n      }\r\n    }\r\n  }\r\n  .profileContainer {\r\n    width: 100%;\r\n    .statsContainer {\r\n      background-color: #fff;\r\n      color: #000;\r\n      margin: 30px;\r\n      width: 10%;\r\n      height: auto;\r\n    }\r\n    .biosContainer {\r\n      background-color: #fff;\r\n      color: #000;\r\n      margin: 30px;\r\n      width: 10%;\r\n      height: 50%;\r\n    }\r\n  }\r\n}\r\n"]}]);
+exports.push([module.i, ".RosterProfile_rProfile__31ogx {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  background-color: #eee; }\n  .RosterProfile_rProfile__31ogx .RosterProfile_navContainer__BhCCU {\n    background: #fff;\n    width: 100%;\n    height: 50px;\n    box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);\n    margin-bottom: 30px; }\n    .RosterProfile_rProfile__31ogx .RosterProfile_navContainer__BhCCU .RosterProfile_subNav__3QJaj {\n      display: flex;\n      list-style-type: none;\n      padding: 20px 40px; }\n      .RosterProfile_rProfile__31ogx .RosterProfile_navContainer__BhCCU .RosterProfile_subNav__3QJaj .RosterProfile_item__n_Bu5 {\n        font-size: 14px;\n        margin-right: 50px;\n        cursor: pointer;\n        color: black;\n        font-weight: 600; }\n      .RosterProfile_rProfile__31ogx .RosterProfile_navContainer__BhCCU .RosterProfile_subNav__3QJaj .RosterProfile_active__1Oqz6 {\n        border-top: 1px solid black; }\n  .RosterProfile_rProfile__31ogx .RosterProfile_profileContainer__2CsKM {\n    width: 100%; }\n    .RosterProfile_rProfile__31ogx .RosterProfile_profileContainer__2CsKM .RosterProfile_statsContainer__1q6mK {\n      background-color: #fff;\n      color: #000;\n      margin: 0 auto;\n      width: 80%;\n      height: auto; }\n    .RosterProfile_rProfile__31ogx .RosterProfile_profileContainer__2CsKM .RosterProfile_biosContainer__2R2-M {\n      background-color: #fff;\n      color: #000;\n      margin: 0 auto;\n      width: 80%;\n      height: 50%; }\n", "",{"version":3,"sources":["C:/Users/Zak/Documents/Code/pmg-site/components/roster/RosterProfile/RosterProfile.module.scss"],"names":[],"mappings":"AAEA;EACE,WAAW;EACX,YAAY;EACZ,aAAa;EACb,sBAAsB;EACtB,sBAAsB,EAAA;EALxB;IAOI,gBAAgB;IAChB,WAAW;IACX,YAAY;IAGZ,iDAAiD;IACjD,mBAAmB,EAAA;IAbvB;MAeM,aAAa;MACb,qBAAqB;MACrB,kBAAkB,EAAA;MAjBxB;QAmBQ,eAAe;QACf,kBAAkB;QAClB,eAAe;QACf,YAAY;QACZ,gBAAgB,EAAA;MAvBxB;QA0BQ,2BAA2B,EAAA;EA1BnC;IA+BI,WAAW,EAAA;IA/Bf;MAiCM,sBAAsB;MACtB,WAAW;MACX,cAAc;MACd,UAAU;MACV,YAAY,EAAA;IArClB;MAwCM,sBAAsB;MACtB,WAAW;MACX,cAAc;MACd,UAAU;MACV,WAAW,EAAA","file":"RosterProfile.module.scss","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap\");\r\n\r\n.rProfile {\r\n  width: 100%;\r\n  height: 100%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-color: #eee;\r\n  .navContainer {\r\n    background: #fff;\r\n    width: 100%;\r\n    height: 50px;\r\n    -webkit-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);\r\n    -moz-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);\r\n    box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);\r\n    margin-bottom: 30px;\r\n    .subNav {\r\n      display: flex;\r\n      list-style-type: none;\r\n      padding: 20px 40px;\r\n      .item {\r\n        font-size: 14px;\r\n        margin-right: 50px;\r\n        cursor: pointer;\r\n        color: black;\r\n        font-weight: 600;\r\n      }\r\n      .active {\r\n        border-top: 1px solid black;\r\n      }\r\n    }\r\n  }\r\n  .profileContainer {\r\n    width: 100%;\r\n    .statsContainer {\r\n      background-color: #fff;\r\n      color: #000;\r\n      margin: 0 auto;\r\n      width: 80%;\r\n      height: auto;\r\n    }\r\n    .biosContainer {\r\n      background-color: #fff;\r\n      color: #000;\r\n      margin: 0 auto;\r\n      width: 80%;\r\n      height: 50%;\r\n    }\r\n  }\r\n}\r\n"]}]);
 // Exports
 exports.locals = {
 	"rProfile": "RosterProfile_rProfile__31ogx",
@@ -36273,14 +36307,14 @@ function Main() {
 
 /***/ }),
 
-/***/ "./public/images/basketball.jpg":
-/*!**************************************!*\
-  !*** ./public/images/basketball.jpg ***!
-  \**************************************/
+/***/ "./public/images/bbbg.jpg":
+/*!********************************!*\
+  !*** ./public/images/bbbg.jpg ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/basketball.df256efbdd59280aaaa4ffb0b3b00601.jpg";
+module.exports = __webpack_require__.p + "static/media/bbbg.c079876c47dc79c63670941b79267613.jpg";
 
 /***/ }),
 

@@ -1,7 +1,40 @@
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: #fff !important;
+  background: #ffc331 !important;
 }
+#fp-nav.fp-show-active a.active + .fp-tooltip,
+#fp-nav ul li:hover .fp-tooltip {
+  color: #ffc331 !important;
+  font-weight: 600;
+}
+
+// slider arrows
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #ffc331 !important;
+  border-width: 21.5px 0 21.5px 34px !important;
+  display: none;
+}
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent #ffc331 transparent transparent !important;
+  border-width: 21.5px 34px 21.5px 0 !important;
+  display: none;
+}
+
+// bottom dots container
+.fp-slidesNav.fp-bottom {
+  bottom: 170px !important;
+}
+// bottom dots
+
+#fp-nav ul,
+.fp-slidesNav ul {
+  position: absolute;
+  left: 50%;
+
+  transform: translate(-50%);
+}
+
 .hero {
   background-attachment: fixed;
 }
