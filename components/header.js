@@ -10,7 +10,7 @@ export default function Header() {
   const [state, setState] = useState({
     initial: false,
     clicked: null,
-    menuName: "Menu"
+    menuName: "Menu",
   });
   // State of our button
   const [disabled, setDisabled] = useState(false);
@@ -21,19 +21,19 @@ export default function Header() {
       setState({
         initial: null,
         clicked: true,
-        menuName: "Close"
+        menuName: "Close",
       });
       console.log(1);
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: "Menu"
+        menuName: "Menu",
       });
       console.log(2);
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: "Close"
+        menuName: "Close",
       });
       console.log(3);
     }
@@ -77,9 +77,9 @@ export default function Header() {
             className="brand-link w-nav-brand w--current"
           >
             <img
-              src="./logo.png"
+              src="./2g.png"
               width="117"
-              srcSet="./images/logo-p-500.png 500w, images/logo.png 640w"
+              srcSet="./images/2g.png 500w, images/2g.png 640w"
               sizes="117px"
               alt="logo"
               className="image"
@@ -87,6 +87,11 @@ export default function Header() {
           </a>
         </Link>
         <style jsx>{`
+          .w-container {
+            position: absolute;
+            width: 80%;
+            margin: 0 auto;
+          }
           .brand-link {
             width: 100%;
             z-index: 100;
@@ -115,11 +120,18 @@ export default function Header() {
           onClick={handleMenu}
         >
           <div className="menu-text">MENU</div>
-          <div className="menu-icon w-icon-nav-menu"></div>
+          {/* <div className="menu-icon w-icon-nav-menu"></div> */}
         </div>
         <style jsx>{`
           .menu-button {
             z-index: 100;
+          }
+          .w-nav-menu {
+            display: none;
+          }
+          .menu-text,
+          menu-icon {
+            display: none;
           }
         `}</style>
       </div>

@@ -73,8 +73,8 @@ export default function Roster() {
                     <p>
                       Orange Beanie is an emerging artist from Indianapolis, IN.
                       Due to his charismatic stage presence and personality he’s
-                      been dubbed an Odd.Ball and predominantly makes energetic
-                      music for other Odd.Balls to enjoy L. However that doesn’t
+                      been dubbed an Odd-Ball and predominantly makes energetic
+                      music for other Odd-Balls to enjoy. However that doesn’t
                       mean he’s a one trick pony, he can’t be boxed in
                       artistically and he’s eager to prove it.
                     </p>

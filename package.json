@@ -17,8 +17,10 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
-    "gsap": "^3.2.6",
+    "@fullpage/react-fullpage": "^0.1.18",
+    "gsap": "file:gsap-bonus.tgz",
     "next": "^9.3.4",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
