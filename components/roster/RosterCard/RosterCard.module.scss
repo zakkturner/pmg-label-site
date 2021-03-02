@@ -1,0 +1,173 @@
+.rosterCard {
+  width: 100%;
+
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 20px 0 40px;
+  grid-gap: 1rem;
+  align-items: flex-end;
+  height: 12rem;
+  .picContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    .rosterPic {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .rosterDescription {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    .descInfo {
+      margin-bottom: 0;
+      font-size: 14px;
+      .title {
+        font-weight: 700;
+      }
+    }
+    .descTeam {
+      margin-bottom: 5px;
+    }
+    .active {
+      background: green;
+      width: 50px;
+      border-radius: 45px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20px;
+      margin-top: 5px;
+    }
+    .name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .rosterCard {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    height: 20rem;
+    .rosterPic {
+      width: 100%;
+      height: 100%;
+    }
+    .rosterDescription {
+      .name {
+        font-weight: 700;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .rosterCard {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    height: 26rem;
+    .rosterPic {
+      // width: 355px;
+      // height: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .rosterCard {
+    // height: 35%;
+    .rosterPic {
+      // width: 400px;
+      // height: 300px;
+    }
+    .rosterDescription {
+      align-self: center;
+      .name {
+        // font-weight: 700;
+        // font-size: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .rosterCard {
+    grid-template-columns: 35% 1fr;
+    height: 26rem;
+    .rosterDescription {
+      align-self: center;
+      .name {
+        font-size: 45px;
+      }
+      .descInfo,
+      .descTeam {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .rosterCard {
+    grid-template-columns: 1fr 1fr;
+    height: 25rem;
+    .picContainer {
+      width: 45%;
+      height: 75%;
+      display: flex;
+      align-items: flex-end;
+      justify-self: center;
+    }
+    .rosterDescription {
+      align-self: center;
+      .name {
+        font-size: 45px;
+      }
+      .descInfo,
+      .descTeam {
+        font-size: 16px;
+      }
+    }
+  }
+}
+// .rosterCard {
+//   width: 100%;
+//   display: grid !important;
+//   grid-template-columns: 30% 1fr;
+//   padding: 20px 20px 0 40px;
+
+//   .rosterDescription {
+//     display: flex;
+//     flex-direction: column;
+//     .descInfo {
+//       margin-bottom: 0;
+//       .title {
+//         font-weight: 700;
+//       }
+//     }
+//     .active {
+//       background: green;
+//       width: 50px;
+//       border-radius: 45px;
+//       color: #fff;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       height: 20px;
+//       margin-top: 5px;
+//     }
+//     .name {
+//       font-size: 50px;
+//       font-weight: 700;
+//     }
+//   }
+//   .rosterPic {
+//     width: 350px;
+//     height: 350px;
+//   }
+// }
