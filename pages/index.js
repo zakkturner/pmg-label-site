@@ -1,5 +1,5 @@
 import Header from "../components/header.js";
-import Link from "next/link";
+
 import Hero from "../components/hero/Hero";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +9,6 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import Roster from "../components/roster/Roster.js";
-// import "../public/styles/main.scss";
 
 export default function Index() {
   const gameFilmData = [
